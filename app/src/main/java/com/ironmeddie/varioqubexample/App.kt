@@ -23,7 +23,6 @@ class App: Application() {
 
     private fun virioqubInit() {
         val settings = VarioqubSettings.Builder("appmetrica.${Constance.APP_ID}")
-            .withClientFeature(Constance.IS_TEST, "false")  // присваиваем клиентские параметры при инииализации
             .withThrottleInterval(1000) // для теста, чтоб таймаут не мешал нам получать свежий конфиг
             .withLogs()
             .build()
